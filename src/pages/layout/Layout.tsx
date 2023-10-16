@@ -7,7 +7,7 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
         <Nav/>
-        <main className="flex h-full min-h-screen flex-col items-center bg-gradient-to-bl from-destructive-8 to-white">
+        <main className="flex h-full min-h-screen flex-col items-center bg-gradient-to-t from-red-800 to-white">
         {children}
       </main>
         <Footer/>    
