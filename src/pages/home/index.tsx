@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutUs from '~/pages/components/AboutUs'
+import AboutUs from '~/components/funcional/AboutUs'
 import Cards from '~/pages/components/Cards'
 import Header from '~/pages/components/Header'
 
