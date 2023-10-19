@@ -7,15 +7,15 @@ import {
 
 function AboutUs() {
   return (
-    <div className='h-[100vh] w-full flex justify-center flex-col items-center'>
-      <div className='flex flex-col items-center h-[100vh] justify-center'>
+    <div id="aboutUs" className='h-[100vh] w-full flex justify-center flex-col items-center '>
+      <div className='flex flex-col items-center h-[100vh] justify-center pt-20'>
 
-        <div className='w-[55vw] h-[90vh] flex justify-around items-center flex-col bg-[#202020] rounded border-none'>
+        <div className='w-[70vw] h-[75vh] flex justify-around items-center flex-col bg-[#202020] rounded border-none'>
         <div className="h-[10vh]">
           <p className='text-4xl font-bold text-white'>¿Que es una Experiencia D-three?</p>
         </div>
           <div>
-            <CardDescription className='text-xl font-semibold text-center text-white w-[40vw]'>
+            <CardDescription className='text-xl font-semibold text-center text-white w-[60vw]'>
             &quot;¡Bienvenidos a nuestro apasionante mundo, donde el baile se
               convierte en una mágica experiencia que va más allá de simplemente
               mover el cuerpo! Aquí, fusionamos la danza con nuestra conciencia

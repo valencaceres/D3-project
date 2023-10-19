@@ -18,16 +18,16 @@ function Nav() {
           <Link href={"/"} className="py-2 capitalize hover:border-b">
             home
           </Link>
-          <Link href={"/"} className="py-2 capitalize hover:border-b">
+          <Link href={"/studio"} className="py-2 capitalize hover:border-b">
             studio
           </Link>
-          <Link href={"/"} className="py-2 capitalize hover:border-b">
+          <Link href={"/crew"} className="py-2 capitalize hover:border-b">
             crew
           </Link>
-          <Link href={"/"} className="py-2 capitalize hover:border-b">
+          <Link href={"/training"} className="py-2 capitalize hover:border-b">
             entretenimiento
           </Link>
-          <Link href={"/"} className="py-2 capitalize hover:border-b">
+          <Link href={"/contactus"} className="py-2 capitalize hover:border-b">
             contactanos
           </Link>
           {isSignedIn ? (
