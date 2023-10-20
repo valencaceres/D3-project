@@ -1,11 +1,11 @@
 import React from 'react'
 import { Button } from '../ui/button'
+import { Link } from 'react-scroll';
 
 interface HeaderProps {
   title: string;
   description?: string;
   button?: string ;
-  onConocenosClick?: () => void; // Define el tipo de la función de devolución de llamada
   video: string
 }
 
@@ -21,7 +21,12 @@ function Header(props: HeaderProps) {
           <p className='max-w-xl font-semibold text-3xl text-center'>{props.description}</p>
         </div>
         <div>
-          {props.button ? <Button onClick={props.onConocenosClick} className='w-fit bg-old-brick-500 hover:bg-red-600 text-white'>{props.button}</Button> : null}
+          {props.button ? <Button className='w-fit bg-old-brick-500 hover:bg-red-600 text-white'>
+            <Link to="aboutUs" smooth={true} duration={500}>
+              {props.button}
+            </Link>
+          </Button> 
+          : null}
         </div>
       </div>
       <div>

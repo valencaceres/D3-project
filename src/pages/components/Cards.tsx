@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import photo from '../../../public/photod3.jpg'
 interface CardData{
-/*     photo:string; */
+    photo?:string;
     title:string;
     description:string;
     link:string;
@@ -31,7 +31,7 @@ export default function Cards({title, description, link}:CardData) {
             </div>
           ) : null}
           <h2 className="absolute  text-center  text-4xl font-bold text-white">
-            {title}
+            <Link href={link}>{title}</Link>
           </h2>
         </CardHeader>
         <CardContent className="flex h-1/2  justify-center bg-[#202020]  ">
