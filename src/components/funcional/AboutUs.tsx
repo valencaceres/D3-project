@@ -3,7 +3,7 @@ import img from '../../../public/D3_Rojo.png'
 import {
   Card,
   CardDescription,
-} from "../ui/card";
+} from "../../pages/ui/card";
 
 function AboutUs() {
   return (

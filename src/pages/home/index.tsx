@@ -1,6 +1,6 @@
-import Header from "../components/Header";
-import AboutUs from "../components/AboutUs";
-import Cards from "../components/Cards";
+import AboutUs from '~/components/funcional/AboutUs'
+import Cards from '~/components/Cards'
+import Header from '~/components/Header'
 
 export default function Home() {
 
@@ -43,3 +43,4 @@ export default function Home() {
     </div>
   );
 }
+
