@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
 import { UserButton, useSession, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,6 +8,7 @@ function Nav() {
     const router = useRouter();
     const { isSignedIn } = useSession();
     const { user } = useUser();
+
   return (
         <nav className="fixed z-50 w-full bg-[#202020] ">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between   text-white">
@@ -30,33 +31,14 @@ function Nav() {
           <Link href={"/contactus"} className="py-2 capitalize hover:border-b">
             contactanos
           </Link>
+          {user?.organizationMemberships[0]?.role === "admin" ? (
+            <Link href={"/dashboard"} className="py-2 capitalize hover:border-b">Dashboard</Link>
+          ):
+          null
+          }
           {isSignedIn ? (
             <>
-              {user?.publicMetadata.role === "customer" && (
-                <Link
-                  className={`rounded-md p-2 font-semibold duration-75 ${
-                    router.pathname.includes("/my-courses")
-                      ? "bg-violet-400"
-                      : "hover:bg-violet-400"
-                  }`}
-                  href={"/my-courses"}
-                >
-                  Mis cursos
-                </Link>
-              )}
-              {user?.publicMetadata.role === "admin" && (
-                <Link
-                  className={`rounded-md p-2 font-semibold duration-75 ${
-                    router.pathname.includes("/dashboard")
-                      ? "bg-[#fdfbfb]"
-                      : "hover:bg-destructive-8"
-                  }`}
-                  href={"/dashboard"}
-                >
-                  Dashboard
-                </Link>
-              )}
-              <UserButton />
+              <UserButton afterSignOutUrl="/"/>
             </>
           ) : (
             <Button

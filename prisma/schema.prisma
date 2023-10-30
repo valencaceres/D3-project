@@ -7,11 +7,3 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
-
-model user {
-  id    Int     @id @default(autoincrement())
-  name  String  
-  insta String 
-  style String
-  isAdmin Boolean
-}

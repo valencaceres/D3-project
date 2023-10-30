@@ -5,7 +5,7 @@ import type { ReactElement, ReactNode } from "react";
 import type { AppProps, AppType } from "next/app";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
-import Layout from "./layout/Layout";
+import Layout from "../layout/Layout";
 import { env } from "~/env.mjs";
 
 export type NextPageWithLayout<

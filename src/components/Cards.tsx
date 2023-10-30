@@ -1,8 +1,8 @@
 import React from 'react'
-import {Card, CardHeader, CardContent} from "../pages/ui/card";
+import {Card, CardHeader, CardContent} from "./ui/card";
 import Image from "next/image";
 import Link from 'next/link';
-import photo from '../../../public/photod3.jpg'
+import photo from '../../public/photod3.jpg'
 interface CardData{
     photo?:string;
     title:string;

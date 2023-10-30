@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../pages/ui/button'
+import { Button } from './ui/button'
 import { Link } from 'react-scroll';
 
 interface HeaderProps {
