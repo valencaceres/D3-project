@@ -2,6 +2,8 @@ import AboutUs from '~/components/funcional/_aboutUs'
 import Cards from '~/components/funcional/helpers/Cards'
 import Header from '~/components/funcional/helpers/Header'
 
+/* comentario para commitear */
+
 export default function Home() {
   let opacity = 'opacity-40'
   let width = 'w-[30vw]'
