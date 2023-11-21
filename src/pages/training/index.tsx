@@ -1,9 +1,7 @@
-import Header from "../../components/Header"
+import Training from "~/components/funcional/_training"
 
 export default function index() {
   return (
-    <div>
-        <Header title="Entrenamiento" video="/hero.mp4"/>
-    </div>
+    <Training/>
   )
 }

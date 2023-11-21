@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from './ui/button'
+import { Button } from '../../ui/button'
 import { Link } from 'react-scroll';
 
 interface HeaderProps {
@@ -12,7 +12,7 @@ interface HeaderProps {
 function Header(props: HeaderProps) {
 
   return (  
-    <div className='h-[126vh] w-full flex items-center justify-center'>
+    <div className='h-[110vh] w-full flex items-center justify-center'>
       <div className='h-[50vh] flex flex-col justify-around items-center z-10'>
         <div className='flex'>
           <p className='font-bold text-4xl uppercase'>{props.title}</p>
@@ -30,9 +30,10 @@ function Header(props: HeaderProps) {
         </div>
       </div>
       <div>
-      <video src={props.video} className='absolute z-0 opacity-40 top-0 left-0 h-[130vh] w-full cover' autoPlay loop muted id="video"></video>
+      <video src={props.video} className='absolute z-0 opacity-40 top-20 pt-3 h-[110vh] left-0 w-full object-cover' autoPlay loop muted id="video"></video>
       </div>
     </div>
+
   )
 }
 

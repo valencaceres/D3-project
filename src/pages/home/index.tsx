@@ -1,9 +1,11 @@
-import AboutUs from '~/components/funcional/AboutUs'
-import Cards from '~/components/Cards'
-import Header from '~/components/Header'
+import AboutUs from '~/components/funcional/_aboutUs'
+import Cards from '~/components/funcional/helpers/Cards'
+import Header from '~/components/funcional/helpers/Header'
 
 export default function Home() {
-
+  let opacity = 'opacity-40'
+  let width = 'w-[30vw]'
+  let height = 'h-[80vh]'
   return (
     <div>
       <Header
@@ -22,6 +24,9 @@ export default function Home() {
               decidirte por el que mas te guste, hay paquetes para que inicies
               de cero por supuesto"
         link="/studio"
+        width={width}
+        height={height}
+        opacity={opacity}
         />
         <Cards
           title="Crew"
@@ -30,6 +35,9 @@ export default function Home() {
               decidirte por el que mas te guste, hay paquetes para que inicies
               de cero por supuesto"
               link="/crew"
+              width={width}
+              height={height}
+              opacity={opacity}
         />
         <Cards
           title="Entrenamiento"
@@ -38,6 +46,9 @@ export default function Home() {
               decidirte por el que mas te guste, hay paquetes para que inicies
               de cero por supuesto"
               link="/training"
+              width={width}
+              height={height}
+              opacity={opacity}
         />
       </div>
     </div>

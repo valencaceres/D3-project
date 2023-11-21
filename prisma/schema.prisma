@@ -7,3 +7,11 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+model Profesors {
+  id  Int @id @default(autoincrement())
+  name String @db.VarChar(255)
+  style String @db.VarChar(50)
+  instagram String @db.VarChar(50)
+  createdAt DateTime @default(now())
+}
