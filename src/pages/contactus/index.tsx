@@ -1,9 +1,7 @@
-import Header from "../../components/Header"
+import ContactUs from "~/components/funcional/_contactus"
 
 export default function index() {
   return (
-    <div>
-        <Header title="Contactanos" video="/hero.mp4"/>
-    </div>
+    <ContactUs/>
   )
 }

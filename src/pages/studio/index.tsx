@@ -1,9 +1,7 @@
-import Header from "../../components/Header"
+import Studio from "~/components/funcional/_studio"
 
-export default function Studio() {
+export default function studio() {
   return (
-    <div>
-      <Header title="Studio" video="/hero.mp4"/>
-    </div>
+    <Studio/>
   )
 }

@@ -1,9 +1,7 @@
-import Header from "../../components/Header"
+import Crew from "~/components/funcional/_crew"
 
 export default function index() {
   return (
-    <div>
-        <Header title="Crew" video="/hero.mp4"/>
-    </div>
+    <Crew/>
   )
 }

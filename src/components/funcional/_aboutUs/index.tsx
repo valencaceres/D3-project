@@ -1,9 +1,9 @@
 import Image from "next/image"
-import img from '../../../public/D3_Rojo.png'
+import img from '../../../../public/D3_Rojo.png'
 import {
   Card,
   CardDescription,
-} from "../../pages/ui/card";
+} from "../../ui/card"
 
 function AboutUs() {
   return (
