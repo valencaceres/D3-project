@@ -56,16 +56,18 @@ export default function NewProfesor() {
                 <h1 className="text-white font-bold text-2xl pt-3">Foto del profesor</h1>
               </div>
               <div>
-                <UploadButton
-                  endpoint="imageUploader"
-                  onClientUploadComplete={(res) => {
-                  console.log("Files: ", res);
-                  alert("Upload Completed");
-                  }}
-                  onUploadError={(error: Error) => {
-                  alert(`ERROR! ${error.message}`);
-                  }}
-                />
+              <UploadButton
+        endpoint="imageUploader"
+        onClientUploadComplete={(res) => {
+          // Do something with the response
+          console.log("Files: ", res);
+          alert("Upload Completed");
+        }}
+        onUploadError={(error: Error) => {
+          // Do something with the error.
+          alert(`ERROR! ${error.message}`);
+        }}
+      />
               </div>
             </div>
           </div>
