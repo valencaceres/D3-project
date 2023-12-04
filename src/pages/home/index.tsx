@@ -1,13 +1,14 @@
 import AboutUs from '~/components/funcional/_aboutUs'
 import Cards from '~/components/funcional/helpers/Cards'
 import Header from '~/components/funcional/helpers/Header'
-
+import Carousel from '~/components/funcional/helpers/Carousel'
 /* comentario para commitear */
 
 export default function Home() {
   let opacity = 'opacity-40'
   let width = 'w-[30vw]'
   let height = 'h-[80vh]'
+  let items = ['/photod3.jpg', '/D3_Blanco.png']
   return (
     <div>
       <Header
@@ -52,6 +53,9 @@ export default function Home() {
               height={height}
               opacity={opacity}
         />
+      </div>
+      <div>
+          <Carousel items={items}></Carousel>
       </div>
     </div>
   );
